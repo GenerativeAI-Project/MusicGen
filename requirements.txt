@@ -1,0 +1,21 @@
+# MusicGen Baseline - Conditional Music Generation
+# Python 3.9+ required
+
+# Core ML
+audiocraft>=1.2.0
+
+# Dataset & Data Loading
+datasets>=2.14.0
+huggingface_hub>=0.17.0
+
+# Evaluation
+frechet-audio-distance>=0.3.0
+
+# Utilities
+numpy>=1.24.0
+scipy>=1.10.0
+soundfile>=0.12.0
+tqdm>=4.65.0
+omegaconf>=2.3.0
+python-dotenv>=1.0.0
+transformers==4.35.2
