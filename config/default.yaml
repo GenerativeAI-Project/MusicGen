@@ -1,0 +1,20 @@
+# MusicGen Baseline Configuration
+
+model:
+  name: facebook/musicgen-small
+  # Alternatives: facebook/musicgen-medium, facebook/musicgen-large
+
+generation:
+  duration: 30.0  # seconds
+  temperature: 1.0  # baseline ancestral sampling
+  use_sampling: true
+  top_k: 250
+  top_p: 0.0
+
+data:
+  dataset: benjamin-paine/free-music-archive-medium
+  split_ratio: [0.9, 0.05, 0.05]  # train, valid, test
+
+evaluation:
+  fad_model: vggish  # vggish, pann, clap, encodec
+  sample_rate: 16000  # for VGGish; use 48000 for EnCodec
